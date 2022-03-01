@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+  font-family: "avenir", sans-serif;
+}
+body {
+  background-image: url("./assets/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@font-face {
+  font-family: "avenir";
+  src: url(./assets/fonts/AvenirLTStd-Black.otf);
+}
+.form-header {
+  font-size: 30px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 32px;
+}
+.nav {
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.nav_item:first-child {
+  color: #ffffffe5;
+}
+.nav_item:not(:first-child) {
+  color: rgba(255, 255, 255, 0.9);
+  opacity: 0.45;
+}
+.nav_container {
+  text-align: center;
+  width: fit-content;
+  margin: auto;
+  margin-bottom: 32px;
+}
+form {
+  max-width: 527px;
+  margin: auto;
+}
+.input_container {
+  margin: 22px 0;
+}
+.text_input {
+  display: flex;
+  flex-direction: column;
+}
+.text_input label {
+  font-size: 13px;
+  line-height: 145%;
+  color: rgba(255, 255, 255, 0.9);
+  opacity: 0.85;
+  margin-bottom: 6px;
+}
+.text_input input {
+  width: 100%;
+  height: 48px;
+  border: 1px solid #4949ff;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0);
+  padding: 0 25px;
+}
+.text_input input::placeholder {
+  font-size: 14px;
+  line-height: 19px;
+  color: #ffffff;
+  opacity: 0.45;
+}
+.radio_input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.radio_input label {
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 145%;
+  color: rgba(255, 255, 255, 0.9);
+  opacity: 0.85;
+}
+.radio_container {
+  display: flex;
+}
+.radio-bg {
+  background: #0e0e9f;
+  border: 1px solid #4949ff;
+  border-radius: 5px;
+  padding: 13px 24px;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 19px;
+  color: #ffffff;
+}
+.radio-bg:first-child {
+  margin-right: 15px;
+}
+.btn-container {
+  width: fit-content;
+  padding: 15px 30px;
+  background: #ffffff;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  width: 186px;
+  height: 49px;
+  cursor: pointer;
+  margin: auto;
+  margin-top: 43px;
+}
+.close {
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 145%;
+  text-transform: capitalize;
+  color: rgba(255, 255, 255, 0.9);
+  opacity: 0.45;
+  position: absolute;
+  top: 43px;
+  right: 88px;
+}
